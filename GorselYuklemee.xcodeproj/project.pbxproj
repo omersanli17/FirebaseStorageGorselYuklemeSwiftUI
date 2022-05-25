@@ -11,6 +11,8 @@
 		2564E429283E7F8200799EA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2564E428283E7F8200799EA4 /* ContentView.swift */; };
 		2564E42B283E7F8300799EA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2564E42A283E7F8300799EA4 /* Assets.xcassets */; };
 		2564E42E283E7F8300799EA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2564E42D283E7F8300799EA4 /* Preview Assets.xcassets */; };
+		2564E436283E804200799EA4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2564E435283E804200799EA4 /* FirebaseStorage */; };
+		2564E43A283E813500799EA4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2564E439283E813500799EA4 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		2564E428283E7F8200799EA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2564E42A283E7F8300799EA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2564E42D283E7F8300799EA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2564E439283E813500799EA4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2564E436283E804200799EA4 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 				2564E428283E7F8200799EA4 /* ContentView.swift */,
 				2564E42A283E7F8300799EA4 /* Assets.xcassets */,
 				2564E42C283E7F8300799EA4 /* Preview Content */,
+				2564E439283E813500799EA4 /* ImagePicker.swift */,
 			);
 			path = GorselYuklemee;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = GorselYuklemee;
+			packageProductDependencies = (
+				2564E435283E804200799EA4 /* FirebaseStorage */,
+			);
 			productName = GorselYuklemee;
 			productReference = 2564E423283E7F8200799EA4 /* GorselYuklemee.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 2564E41A283E7F8200799EA4;
+			packageReferences = (
+				2564E434283E804200799EA4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 2564E424283E7F8200799EA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2564E43A283E813500799EA4 /* ImagePicker.swift in Sources */,
 				2564E429283E7F8200799EA4 /* ContentView.swift in Sources */,
 				2564E427283E7F8200799EA4 /* GorselYuklemeeApp.swift in Sources */,
 			);
@@ -339,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2564E434283E804200799EA4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2564E435283E804200799EA4 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2564E434283E804200799EA4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2564E41B283E7F8200799EA4 /* Project object */;
 }
